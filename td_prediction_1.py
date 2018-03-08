@@ -22,6 +22,7 @@ def compute_state_values():
             # all actions equally likely
             action = random.randint(0, 3)
             next_state, reward, done = env.step(action)
+
             td_target = reward + discount_rate * state_values[tuple(next_state.flatten())]
             update_state_value(td_target, state)
             state = next_state

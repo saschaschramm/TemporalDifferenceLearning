@@ -1,19 +1,7 @@
 import numpy as np
-
 from Environment.catch_agent import CatchAgent
 
-
 class Catch:
-
-    """
-    1 0 0 0
-    0 0 0 0
-    0 0 0 0
-    0 0 0 X
-
-    Catch is a simple environment to study reinforcement learning problems. 1 is the player. The goal is to
-    catch the enemy at the bottom right corner.
-    """
 
     def __init__(self, size):
         self.cols = size
